@@ -1,0 +1,14 @@
+body {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.parent {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid white;
+}
+
+button {
+    border: 1px solid tomato;
+}
