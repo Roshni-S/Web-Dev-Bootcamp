@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h1><strong>Register</strong></h1>
+    
+    <form>
+        <label for="first">First Name:</label>
+        <input id="first" type="text" placeholder="John" required>
+
+        <label for="last">Last Name:</label>
+        <input id="last" type="text" placeholder="Smith" required>
+
+        <p>
+            <label for="male">Male: </label>
+            <input name="male" id="Gender" type="radio" value="Male">
+            
+            <label for="female">Female: </label>
+            <input name="female" id="Gender" type="radio" value="Female">
+        
+            <label for="other">Other: </label>
+            <input name="other" id="Gender" type="radio" value="Other">
+        </p>
+
+        <label for="Email">Email:</label>
+        <input id="Email" type="email" placeholder="email" required>
+
+        <label for="Password">Password:</label>
+        <input id="Password" type="password" pattern=".{5,10}" required title="5 to 10 characters" placeholder="password" required>
+
+        <p>
+            <label>
+                Birthday:
+                <select name="month">
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                </select>
+                <select month="day">
+                    <option>Day</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <select month="year">
+                    <option>Year</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                </select>
+            </label>
+        </p>
+
+        <label for="terms&conditions">I agree to the terms and conditions </label>
+        <input name="terms&conditions" id="I agree to the terms and conditions" type="radio" value="terms&conditions">
+
+        <p>
+            <button>Submit</button>
+        </p>
+  
+    </form>
+    
+</body>
+</html>
