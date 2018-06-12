@@ -1,0 +1,15 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "description": "solution to first express exercise",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon ./app.js"
+  },
+  "author": "Roshni Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  }
+}
