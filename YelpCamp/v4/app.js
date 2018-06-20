@@ -5,7 +5,7 @@ var express     = require("express"),
     Campground  = require("./models/campground"),
     seedDb      = require("./seeds");
 
-    mongoose.connect("mongodb://localhost/yelp_camp_v3");
+    mongoose.connect("mongodb://localhost/yelp_camp_v4");
     app.use(bodyParser.urlencoded({extended: true}));
     app.set("view engine", "ejs");
     seedDb();
@@ -76,6 +76,15 @@ app.get("/campgrounds/:id", function(req, res){
     req.params.id
     res.render("SHOW");
 });
+
+
+// ========================
+// COMMENTS ROUTES
+// ========================
+
+app.get("/campgrounds/:id/comments/new", function(req, res){
+    res.send("THIS WILL BE THE COMMENT FORM");
+})
 
 app.listen(3000, function () {
     console.log("listening on http://localhost:3000");
