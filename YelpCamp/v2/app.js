@@ -69,13 +69,13 @@ app.get("/campgrounds/new", function(req, res){
     res.render("new.ejs");
 });
 
-app.get("/campgrounds/:id", function(){
+app.get("/campgrounds/:id", function(req, res){
     Campground.findById(req.params.id, function(err, foundCampground){
         if(err){
             console.log(err);
         }
         else {
-            red.render("show", {campground: foundCampground});
+            res.render("show", {campground: foundCampground});
         }
     });
     req.params.id
